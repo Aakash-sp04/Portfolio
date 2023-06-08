@@ -1,0 +1,186 @@
+body{
+  color: #40514E;
+  margin: 0;
+  text-align: center; /*Center all element who does'nt have width Set*/
+  font-family: Kanit;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+p{
+  line-height: 2;
+}
+h1{
+  margin: 70px auto 0 auto;
+  font-family: Sofia;
+  line-height: 2; /*Only to increase distance i.e height b/w two heading*/
+  color : #11999E;
+  font-size: 3.5rem;
+  /*Note:- (100% == 16px == 1em) So, (80px == 500% == 5em)*/
+  /* '%' & 'em'--> works as Dynamic while 'px'--> cannot works as Dynamic */
+  /**But 'em' & '%' are parent depended i.e. here body is parent.
+  So, font size vary if we apply some different font-size in body/
+  /*To remove this problem use 'rem' which is also Dynamic
+  but can ignore its parent font-size if applied*/
+
+  /*width: 10%;
+  margin: 0 auto;*/  /*Center element who have width Set*/
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color : #11999E;
+  padding: 20px 0 20px 0;
+  margin: 30px auto 20px;
+}
+h3{
+  font-family: Playfair;
+  color : #66BFBF;
+}
+hr{
+  margin-top: 50px;
+  border-style: none;
+  border-top-style: dashed;
+  border-color: black;
+  border-width: 4px;
+  width: 100%;
+}
+textarea{
+  resize: none;
+}
+
+/*Horizontal Rule*/
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: #11999E;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+/*Mountain Image*/
+@media (min-width : 600px){
+  #mountain{
+    width :auto;
+  }
+}
+@media (max-width : 600px){
+  #mountain{
+    width : 100%;
+  }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #66BFBF;
+    padding: 25px;
+}
+
+/* For cloud graphics */
+.bottom-cloud{
+  position: absolute;
+  left: 20%;
+}
+.top-cloud{
+  position: absolute;
+  right: 20%;
+}
+
+/*Profile*/
+.top-container{
+  background-color: #E8F9FD;
+  padding-top: 100px;
+}
+.profilephoto{
+  border-radius: 100%;
+}
+.intro{
+  width: 50%;
+  margin: 10px auto 10px auto;
+}
+
+/*Footer*/
+.footer-link{
+  color :  #006666;
+  margin: auto 20px auto 20px;
+  text-decoration: none;  /*To remove underlink of link*/
+}
+.footer-link : hover{  /*For pseudo features*/
+  color: #EAF6F6;
+}
+.bottom-container{
+  padding: 30px 0 5px 0;
+  background-color: #66BFBF;
+  margin-top: 50px ;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.copyright{
+  color:  #f2f2f2;
+  font-size: 0.9rem;
+  margin: 30px auto auto auto;
+}
+.contact1{
+  margin: 50px 0 10px 0;
+}
+/* Use 'clear' if you want to wrap
+only tile or any specific text around image
+.prog_info{
+  clear: left;
+}
+*/
