@@ -123,7 +123,8 @@ textarea{
   padding-top: 100px;
 }
 .profilephoto{
-  border-radius: 100%;
+  border-radius: 20%;
+  height: 50%;
 }
 .intro{
   width: 50%;
