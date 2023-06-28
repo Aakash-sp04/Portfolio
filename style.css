@@ -1,5 +1,4 @@
 body{
-  color: #40514E;
   margin: 0;
   text-align: center; /*Center all element who does'nt have width Set*/
   font-family: Kanit;
@@ -30,12 +29,14 @@ h1{
   margin: 0 auto;*/  /*Center element who have width Set*/
 }
 h2{
-  font-family: 'Montserrat', sans-serif;
+  font-family: Sofia;
+  text-decoration: underline;
   font-size: 2rem;
   font-weight: bold;
   color : #11999E;
   padding: 20px 0 20px 0;
-  margin: 30px auto 20px;
+  margin-bottom: 20px;
+  padding-top: 50px;
 }
 h3{
   font-family: Playfair;
@@ -131,6 +132,10 @@ textarea{
   margin: 10px auto 10px auto;
 }
 
+/*For middle sections*/
+.middle-container{
+  background-color: #E8F9FD;
+}
 /*Footer*/
 .footer-link{
   color :  #006666;
@@ -143,7 +148,6 @@ textarea{
 .bottom-container{
   padding: 30px 0 5px 0;
   background-color: #66BFBF;
-  margin-top: 50px ;
 }
 .btn {
   background: #11cdd4;
@@ -175,9 +179,6 @@ textarea{
   color:  #f2f2f2;
   font-size: 0.9rem;
   margin: 30px auto auto auto;
-}
-.contact1{
-  margin: 50px 0 10px 0;
 }
 /* Use 'clear' if you want to wrap
 only tile or any specific text around image
